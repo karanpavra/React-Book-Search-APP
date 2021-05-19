@@ -38,7 +38,7 @@ Ans.
   "lastName": "Pavra",
   "age": 25,
   "live-in": "Canada",
-  "interests": ["Programming", "Travelling"],
+  "interests": ["Programming", "Travelling"]
 }
 
 ```
