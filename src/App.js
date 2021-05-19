@@ -13,7 +13,7 @@ const App = () => {
   }, [query]);
 
   const getBooks = async () => {
-    const response = await fetch(`http://openlibrary.org/search.json?q=${query}`);
+    const response = await fetch(`https://openlibrary.org/search.json?q=${query}`);
     const data = await response.json();
     setBooks(data.docs);
   }
@@ -59,7 +59,7 @@ const App = () => {
           <Book
             key={book.key}
             title={book.title}
-            image={"http://covers.openlibrary.org/b/id/" + book.cover_i + "-M.jpg"}
+            image={"https://covers.openlibrary.org/b/id/" + book.cover_i + "-M.jpg"}
             author={book.author_name}
             publishDate={book.first_publish_year} />
         ))}
